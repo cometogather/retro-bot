@@ -1,0 +1,21 @@
+# Personal retro snapshots — these are yours, not the repo's
+retros/*.md
+
+# Archived skill versions managed by config-versioner
+archive/*.md
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (if running packaging scripts locally)
+__pycache__/
+*.pyc
+*.pyo
