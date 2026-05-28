@@ -294,4 +294,4 @@ creators and practitioners who move at the velocity your business demands.
 
 ---
 
-*"Bite my shiny metal audit trail."*
+
