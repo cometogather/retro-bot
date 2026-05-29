@@ -29,7 +29,7 @@
 **An agile retrospective skill for your Claude collaboration sessions.**
 Capture what you learned. Apply the fix. Make the next session better.
 
-[![Install skill](https://img.shields.io/badge/Install%20skill-retro--bot%20v1.2-blue)](./retro-bot.skill)
+[![Install plugin](https://img.shields.io/badge/Install%20plugin-retro--bot%20v1.3-blue)](./retro-bot.plugin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange)](https://claude.ai)
 
@@ -200,9 +200,9 @@ No accounts. No APIs. No additional installs.
 
 ### Cowork (Claude desktop)
 
-1. Download [`retro-bot.skill`](./retro-bot.skill)
-2. Open Cowork → click the **+** button → **Install skill from file**
-3. Select `retro-bot.skill`
+1. Download [`retro-bot.plugin`](./retro-bot.plugin)
+2. Open Cowork → click the **+** button → **Install plugin from file**
+3. Select `retro-bot.plugin`
 4. Done. Trigger it by saying *"let's do a retro"* after any session.
 
 **First run:** retro-bot will ask you to set an archive directory once, a folder
@@ -276,6 +276,7 @@ and pay it forward when you can.
 
 | Version | Date | What changed |
 |---------|------|--------------|
+| v1.3 | 2026-05-29 | Migrated to plugin structure: added plugin.json, moved skill to skills/retro-bot/, repackaged as .plugin |
 | v1.2 | 2026-05-26 | Added project/session update type (project CLAUDE.md, client briefs, session configs) |
 | v1.1 | 2026-05-26 | Archive directory setup, mandatory snapshots, running audit log (retro-log.md) |
 | v1.0 | 2026-05-26 | Initial release: 7-phase retro workflow, 5 formats, copy-first versioning |
