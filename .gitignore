@@ -1,8 +1,8 @@
 # Personal retro snapshots — these are yours, not the repo's
-retros/*.md
+retros/
 
-# Archived skill versions managed by config-versioner
-archive/*.md
+# Archived skill versions
+archive/
 
 # OS cruft
 .DS_Store

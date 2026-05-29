@@ -233,10 +233,7 @@ retro-bot/
 │       └── references/
 │           ├── retro-formats.md    ← WWW, 4Ls, Start/Stop/Continue, etc.
 │           └── action-item-types.md ← when to use each type of change
-├── retros/                         ← default archive placeholder (your snapshots
-│                                      go wherever you configure in Phase 0)
-├── archive/                        ← old skill versions (copy-first versioning)
-├── .gitignore                      ← keeps personal retros out of your fork
+├── .gitignore                      ← keeps personal retros and archives out of your fork
 ├── LICENSE                         ← MIT
 └── README.md                       ← you are here
 ```
