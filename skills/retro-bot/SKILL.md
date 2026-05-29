@@ -212,10 +212,10 @@ Save a full retro snapshot to the configured `archive_dir`. Filename format:
 [archive_dir]/YYYY-MM-DD-[short-descriptor]-retro.md
 ```
 
-Example: `H:\My Drive\Retros\2026-05-15-syp-newsletter-sow-retro.md`
+Example: `H:\My Drive\Retros\2026-05-15-doc-build-retro.md`
 
-Keep descriptors short (3–5 words, hyphenated): `dashboard-gather-team`,
-`campaign-brief-client-x`, `data-analysis-q2`.
+Keep descriptors short (3–5 words, hyphenated): `dashboard-build`, `content-draft`,
+`data-analysis-q2`.
 
 ### Snapshot Template
 
@@ -281,7 +281,7 @@ Running record of all retro-bot sessions.
 Append each new retro as one row:
 
 ```markdown
-| 2026-05-15 | SOW build – SYPartners newsletter | 2 | 1 | 0 | [link](2026-05-15-syp-newsletter-sow-retro.md) |
+| 2026-05-15 | Doc build – long-form proposal | 2 | 1 | 0 | [link](2026-05-15-proposal-doc-retro.md) |
 ```
 
 - **Applied**: number of action items with status ✅ Applied
@@ -323,3 +323,4 @@ After saving both files, confirm:
 | v1.0 | 2026-05-26 | Initial version — full retro workflow, 6-phase structure, copy-first versioning, retro report template |
 | v1.1 | 2026-05-26 | Added Phase 0 archive directory setup (one-time config saved to Claude.md), mandatory retro snapshot saving, running audit log (retro-log.md) with per-retro outcomes tracking |
 | v1.2 | 2026-05-26 | Added project/session update as a distinct action item type — covers project CLAUDE.md, Cowork session config, client brief files, and Claude.ai Custom Instructions; clarified scope distinction from user-level Claude.md |
+| v1.3 | 2026-05-29 | Migrated to plugin structure (skills/retro-bot/SKILL.md), added .claude-plugin/plugin.json for Claude Code compatibility |

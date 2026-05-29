@@ -18,7 +18,7 @@ behavior, assumptions, or missing edge-case handling.
 - "The table headers were wrong" → skill has hardcoded assumptions
 
 **How to apply:**
-1. Identify the specific skill (e.g., `gather-sow-and-brief-builder`)
+1. Identify the specific skill
 2. Identify the specific section or instruction to change
 3. Apply copy-first versioning:
    - Read current version → apply edits in memory → write to new version filename
@@ -68,15 +68,6 @@ different project or for a different client?" If yes → Claude.md. If no → pr
 4. Apply copy-first versioning: read current → edit in memory → write to new version filename → move old to `archive/`
 5. Confirm to the user what was added and where
 
-**Good project/session additions look like:**
-```
-## SYPartners — Engagement Context
-- Client delivers briefs via Notion; always check the linked page before starting
-- Brand palette: SYP Blue (#1A2F5A), SYP Gold (#C9A84C) — never use Gather defaults
-- All deliverables save to: H:\My Drive\Gather\SYP\[project-name]\Deliverables\
-- SOW and scope must align to the rate card in H:\...\SYP\Rate Card v3.xlsx
-```
-
 **The scope hygiene principle:** Resist putting client-specific context into the global
 Claude.md. When you work with 5+ clients, a bloated Claude.md full of per-client details
 creates noise and potential confusion. Each client deserves their own clean context file.
@@ -107,7 +98,6 @@ about the user, project, preferences, or working environment — context that ap
 ## File Output Preferences
 - Always save final deliverables to H:/My Drive/[path] unless instructed otherwise
 - Default document format: .docx unless user specifies PDF
-- Always use the Gather brand palette for any designed output
 ```
 
 **Poor Claude.md additions:**
@@ -138,7 +128,7 @@ to enforce across all sessions.
 **Example retro report section:**
 ```markdown
 ## Process Agreements
-- CJ will provide full client brief in a single message block before starting SOW builds
+- Provide full brief in a single message block before starting builds
 - Claude will confirm output path before creating any deliverable file
 - Retros should be run within 24 hours of session completion
 ```
@@ -159,8 +149,7 @@ skill — not a patch to an existing one.
 **How to apply:**
 1. Note it as a "🆕 New skill: [name]" action item in the retro report
 2. Describe in 2–3 sentences: what it would do, when it would trigger, what problem it solves
-3. If the user wants to build it immediately, invoke the `skill-creator` skill
-4. If deferring, the retro report acts as the backlog item
+3. If deferring, the retro report acts as the backlog item
 
 **Threshold:** Don't create a new skill for something that happens once or is
 addressable with a small SKILL.md edit. New skills are overhead. The bar should

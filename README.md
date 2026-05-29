@@ -208,26 +208,16 @@ No accounts. No APIs. No additional installs.
 **First run:** retro-bot will ask you to set an archive directory once, a folder
 where all retro snapshots will be saved automatically going forward.
 
-### Manual install (Claude Code / advanced)
+### Claude Code
 
 ```bash
 git clone https://github.com/cometogather/retro-bot.git
+cd retro-bot
+claude plugin install .
 ```
 
-Then add the skill path to your Claude Code config. In `.claude/settings.json`:
-
-```json
-{
-  "skills": ["/absolute/path/to/retro-bot"]
-}
-```
-
-Or reference it from your project `CLAUDE.md`:
-
-```markdown
-## Skills
-- /absolute/path/to/retro-bot
-```
+That's it. Claude Code reads `plugin.json` and auto-discovers the skill. Trigger it
+by saying *"let's do a retro"* after any session.
 
 ---
 
@@ -235,10 +225,14 @@ Or reference it from your project `CLAUDE.md`:
 
 ```
 retro-bot/
-├── SKILL.md                        ← the skill (7-phase retro workflow)
-├── references/
-│   ├── retro-formats.md            ← WWW, 4Ls, Start/Stop/Continue, etc.
-│   └── action-item-types.md        ← when to use each type of change
+├── .claude-plugin/
+│   └── plugin.json                 ← plugin manifest (name, version, author)
+├── skills/
+│   └── retro-bot/
+│       ├── SKILL.md                ← the skill (7-phase retro workflow)
+│       └── references/
+│           ├── retro-formats.md    ← WWW, 4Ls, Start/Stop/Continue, etc.
+│           └── action-item-types.md ← when to use each type of change
 ├── retros/                         ← default archive placeholder (your snapshots
 │                                      go wherever you configure in Phase 0)
 ├── archive/                        ← old skill versions (copy-first versioning)

@@ -1,0 +1,12 @@
+{
+  "name": "retro-bot",
+  "version": "1.2.0",
+  "description": "An agile retrospective skill for your Claude collaboration sessions. Capture what you learned. Apply the fix. Make the next session better.",
+  "author": {
+    "name": "Christophe Jammet"
+  },
+  "homepage": "https://github.com/cometogather/retro-bot",
+  "repository": "https://github.com/cometogather/retro-bot",
+  "license": "MIT",
+  "keywords": ["retrospective", "agile", "claude", "sessions", "improvement", "workflow"]
+}
