@@ -26,12 +26,25 @@
 
 > *"Always leave things better than you found them."*
 
-**An open-source agile retrospective skill for Claude.**
-Make your AI sessions compound.
+**An agile retrospective skill for your Claude collaboration sessions.**
+Capture what you learned. Apply the fix. Make the next session better.
 
 [![Install skill](https://img.shields.io/badge/Install%20skill-retro--bot%20v1.2-blue)](./retro-bot.skill)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange)](https://claude.ai)
+
+---
+
+## How it fits into your workflow
+
+You finish a Claude session — a document build, a data analysis, a code review, a content
+draft, whatever the work was. Instead of closing the window and letting the friction
+evaporate, you type:
+
+> *"let's do a retro on that session"*
+
+Ten minutes later: the fix is applied, the snapshot is saved, and the next session starts
+smarter. That's it. retro-bot handles the rest.
 
 ---
 
@@ -109,10 +122,10 @@ This is what your retro log looks like after a few sessions:
 
 | Date       | Session                         | Applied | Noted | Backlogged | Snapshot |
 |------------|---------------------------------|---------|-------|------------|----------|
-| 2026-05-15 | SOW build – consulting client   | 2       | 1     | 0          | [→](retros/2026-05-15-consulting-sow-retro.md) |
-| 2026-05-18 | Dashboard – internal ops        | 2       | 0     | 1          | [→](retros/2026-05-18-ops-dashboard-retro.md) |
-| 2026-05-22 | Campaign brief – client         | 1       | 2     | 0          | [→](retros/2026-05-22-campaign-brief-retro.md) |
-| 2026-05-26 | Data analysis – Q2 review       | 3       | 0     | 1          | [→](retros/2026-05-26-q2-analysis-retro.md) |
+| 2026-05-15 | Doc build – long-form proposal  | 2       | 1     | 0          | [→](retros/2026-05-15-proposal-doc-retro.md) |
+| 2026-05-18 | Analysis – weekly metrics       | 2       | 0     | 1          | [→](retros/2026-05-18-metrics-analysis-retro.md) |
+| 2026-05-22 | Content draft – product brief   | 1       | 2     | 0          | [→](retros/2026-05-22-product-brief-retro.md) |
+| 2026-05-26 | Research – competitive review   | 3       | 0     | 1          | [→](retros/2026-05-26-competitive-research-retro.md) |
 ```
 
 Each row links to a full snapshot: the retro board, every action item, what was applied,
@@ -293,5 +306,3 @@ creators and practitioners who move at the velocity your business demands.
 [github.com/cometogather](https://github.com/cometogather)
 
 ---
-
-
