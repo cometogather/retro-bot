@@ -200,7 +200,7 @@ No accounts. No APIs. No additional installs.
 
 ### Cowork (Claude desktop)
 
-1. Download [`retro-bot.plugin`](./retro-bot.plugin)
+1. Download [`retro-bot.plugin`](https://github.com/cometogather/retro-bot/releases/latest/download/retro-bot.plugin)
 2. Open Cowork → click the **+** button → **Install plugin from file**
 3. Select `retro-bot.plugin`
 4. Done. Trigger it by saying *"let's do a retro"* after any session.
