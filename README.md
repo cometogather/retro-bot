@@ -200,13 +200,22 @@ No accounts. No APIs. No additional installs.
 
 ### Cowork (Claude desktop)
 
-1. Download [`retro-bot.plugin`](https://github.com/cometogather/retro-bot/releases/latest/download/retro-bot.plugin)
-2. Open Cowork → click the **+** button → **Install plugin from file**
-3. Select `retro-bot.plugin`
+1. In Cowork, open **Customize → Plugins → +** → **Add marketplace**
+2. Paste this URL:
+
+   ```
+   https://github.com/cometogather/retro-bot/raw/main/.claude-plugin/marketplace.json
+   ```
+
+3. **Sync** the marketplace, then click **Install** on retro-bot in the catalog
 4. Done. Trigger it by saying *"let's do a retro"* after any session.
 
 **First run:** retro-bot will ask you to set an archive directory once, a folder
 where all retro snapshots will be saved automatically going forward.
+
+**Alternative (file install):** if you'd rather not add a marketplace, download
+[`retro-bot.plugin`](./retro-bot.plugin) directly and use Cowork's
+**Install plugin from file** option.
 
 ### Claude Code
 
