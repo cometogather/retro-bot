@@ -210,14 +210,31 @@ where all retro snapshots will be saved automatically going forward.
 
 ### Claude Code
 
-```bash
-git clone https://github.com/cometogather/retro-bot.git
-cd retro-bot
-claude plugin install .
+Inside an interactive Claude Code session:
+
+```
+/plugin marketplace add cometogather/retro-bot
+/plugin install retro-bot@retro-bot-marketplace
 ```
 
-That's it. Claude Code reads `plugin.json` and auto-discovers the skill. Trigger it
-by saying *"let's do a retro"* after any session.
+The first command registers the retro-bot marketplace (one-time setup per machine).
+The second installs the plugin. Trigger it by saying *"let's do a retro"* after any
+session.
+
+To update later: `/plugin marketplace update` then `/plugin upgrade retro-bot`.
+
+### Claude Code (local development)
+
+If you want to clone and run a local copy (for hacking on the plugin):
+
+```bash
+git clone https://github.com/cometogather/retro-bot.git
+claude --plugin-dir ./retro-bot
+```
+
+`--plugin-dir` loads the local directory as a plugin for the session without installing.
+Useful when you're modifying `SKILL.md` and want to test changes immediately. Run
+`/reload-plugins` inside the session after edits.
 
 ---
 
@@ -226,7 +243,8 @@ by saying *"let's do a retro"* after any session.
 ```
 retro-bot/
 ├── .claude-plugin/
-│   └── plugin.json                 ← plugin manifest (name, version, author)
+│   ├── plugin.json                 ← plugin manifest (name, version, author)
+│   └── marketplace.json            ← marketplace listing so users can /plugin install
 ├── skills/
 │   └── retro-bot/
 │       ├── SKILL.md                ← the skill (7-phase retro workflow)
