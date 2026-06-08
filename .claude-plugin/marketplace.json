@@ -7,11 +7,7 @@
   "plugins": [
     {
       "name": "retro-bot",
-      "source": {
-        "source": "github",
-        "repo": "cometogather/retro-bot",
-        "ref": "main"
-      },
+      "source": "https://raw.githubusercontent.com/cometogather/retro-bot/main/retro-bot.plugin",
       "description": "An agile retrospective skill for your Claude collaboration sessions. Capture what you learned. Apply the fix. Make the next session better.",
       "author": "Christophe Jammet",
       "license": "MIT",

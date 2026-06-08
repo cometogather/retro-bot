@@ -245,6 +245,23 @@ claude --plugin-dir ./retro-bot
 Useful when you're modifying `SKILL.md` and want to test changes immediately. Run
 `/reload-plugins` inside the session after edits.
 
+### Having trouble installing?
+
+If the marketplace install returns an error about source type compatibility, two fallbacks
+both work on any Claude Code version with plugin support:
+
+```bash
+# Option 1: load locally for the session (no install)
+git clone https://github.com/cometogather/retro-bot.git
+claude --plugin-dir ./retro-bot
+
+# Option 2: download the plugin file and install from file
+curl -LO https://raw.githubusercontent.com/cometogather/retro-bot/main/retro-bot.plugin
+claude plugin install ./retro-bot.plugin
+```
+
+Either path bypasses the marketplace entirely.
+
 ---
 
 ## What's inside
