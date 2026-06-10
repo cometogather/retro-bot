@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "retro-bot",
-      "source": "./",
+      "source": "./plugins/retro-bot",
       "description": "An agile retrospective skill for your Claude collaboration sessions. Capture what you learned. Apply the fix. Make the next session better.",
       "author": "Christophe Jammet",
       "license": "MIT",

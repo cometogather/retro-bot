@@ -271,15 +271,18 @@ Either path bypasses the marketplace entirely.
 ```
 retro-bot/
 ├── .claude-plugin/
-│   ├── plugin.json                 ← plugin manifest (name, version, author)
 │   └── marketplace.json            ← marketplace listing so users can /plugin install
-├── skills/
+├── plugins/
 │   └── retro-bot/
-│       ├── SKILL.md                ← the skill (7-phase retro workflow)
-│       └── references/
-│           ├── retro-formats.md    ← WWW, 4Ls, Start/Stop/Continue, etc.
-│           └── action-item-types.md ← when to use each type of change
-├── .gitignore                      ← keeps personal retros and archives out of your fork
+│       ├── .claude-plugin/
+│       │   └── plugin.json         ← plugin manifest (name, version, author)
+│       └── skills/
+│           └── retro-bot/
+│               ├── SKILL.md        ← the skill (7-phase retro workflow)
+│               └── references/
+│                   ├── retro-formats.md     ← WWW, 4Ls, Start/Stop/Continue, etc.
+│                   └── action-item-types.md ← when to use each type of change
+├── .gitignore                      ← keeps personal retros and campaign assets out of the repo
 ├── LICENSE                         ← MIT
 └── README.md                       ← you are here
 ```

@@ -1,6 +1,10 @@
 # Personal retro snapshots — these are yours, not the repo's
 retros/
 
+# Internal campaign assets (Gather-only, do not publish)
+Retro-bot-campaign/
+campaign-launch-v1/
+
 # Archived skill versions
 archive/
 
