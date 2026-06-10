@@ -29,6 +29,8 @@
 **An agile retrospective skill for your Claude collaboration sessions.**
 Capture what you learned. Apply the fix. Make the next session better.
 
+*Continuous improvement = continuous tokenmaxxing.*
+
 [![Install plugin](https://img.shields.io/badge/Install%20plugin-retro--bot%20v1.3-blue)](#install)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange)](https://claude.ai)
@@ -108,8 +110,8 @@ improvement, every outcome: a permanent record of how your Claude setup has evol
 and why.
 
 After ten retros, you can look back and see exactly how your setup has evolved. The
-prompts are tighter. The skills are smarter. The sessions are faster. That's
-compounding.
+prompts are tighter. The skills are smarter. The sessions are faster. Your tokens go
+further. That's compounding. Call it tokenmaxxing.
 
 ---
 
@@ -214,8 +216,8 @@ No accounts. No APIs. No additional installs.
 where all retro snapshots will be saved automatically going forward.
 
 **Alternative (file install):** if you'd rather not add a marketplace, download
-[`retro-bot.plugin`](#install) directly and use Cowork's
-**Install plugin from file** option.
+[`retro-bot.plugin`](https://raw.githubusercontent.com/cometogather/retro-bot/main/retro-bot.plugin)
+directly and use Cowork's **Install plugin from file** option.
 
 ### Claude Code
 
