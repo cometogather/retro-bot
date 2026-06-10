@@ -23,3 +23,6 @@ desktop.ini
 __pycache__/
 *.pyc
 *.pyo
+
+# Claude local plugin cache
+.claude/
