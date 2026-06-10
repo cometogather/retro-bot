@@ -204,7 +204,7 @@ No accounts. No APIs. No additional installs.
 2. Paste this URL:
 
    ```
-   https://github.com/cometogather/retro-bot/raw/main/.claude-plugin/marketplace.json
+   https://github.com/cometogather/retro-bot
    ```
 
 3. **Sync** the marketplace, then click **Install** on retro-bot in the catalog
