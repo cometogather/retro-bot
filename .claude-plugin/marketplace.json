@@ -1,8 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "retro-bot-marketplace",
-  "version": "1.0.0",
-  "description": "retro-bot: an agile retrospective skill for Claude collaboration sessions.",
   "owner": {
     "name": "Christophe Jammet",
     "email": "CJammet@gather.co"
@@ -10,15 +7,11 @@
   "plugins": [
     {
       "name": "retro-bot",
+      "source": { "type": "github", "repo": "cometogather/retro-bot", "ref": "main" },
       "description": "An agile retrospective skill for your Claude collaboration sessions. Capture what you learned. Apply the fix. Make the next session better.",
-      "version": "1.3.0",
-      "author": {
-        "name": "Christophe Jammet",
-        "email": "CJammet@gather.co"
-      },
-      "source": "./",
-      "category": "productivity",
+      "author": "Christophe Jammet",
       "license": "MIT",
+      "version": "1.3.0",
       "keywords": ["retrospective", "agile", "claude", "sessions", "improvement", "workflow"]
     }
   ]
