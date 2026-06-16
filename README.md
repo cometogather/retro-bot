@@ -210,7 +210,10 @@ No accounts. No APIs. No additional installs.
    ```
 
 3. **Sync** the marketplace, then click **Install** on retro-bot in the catalog
-4. Done. Trigger it by saying *"let's do a retro"* after any session.
+4. **Start a new chat** (or quit + relaunch Cowork). Skills don't hot-load into
+   an already-running session — if you try retro-bot in the same chat where you
+   installed it, Claude will say it can't find the skill.
+5. Done. Trigger it by saying *"let's do a retro"* after any session.
 
 **First run:** retro-bot will ask you to set an archive directory once, a folder
 where all retro snapshots will be saved automatically going forward.
@@ -233,6 +236,23 @@ The second installs the plugin. Trigger it by saying *"let's do a retro"* after 
 session.
 
 To update later: `/plugin marketplace update` then `/plugin upgrade retro-bot`.
+
+> **Heads up — HTTPS clone.** Claude Code defaults to SSH when cloning plugins from
+> GitHub. If you don't have a GitHub SSH key configured on your machine (most people
+> don't), install will fail with `Host key verification failed`. Set this environment
+> variable once before installing and you're good:
+>
+> ```bash
+> # macOS / Linux (add to ~/.zshrc or ~/.bashrc to persist)
+> export CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1
+> ```
+>
+> ```powershell
+> # Windows PowerShell (persistent, survives reboots)
+> [Environment]::SetEnvironmentVariable("CLAUDE_CODE_PLUGIN_PREFER_HTTPS", "1", "User")
+> ```
+>
+> Then restart Claude Code and run the install commands above.
 
 ### Claude Code (local development)
 
@@ -342,5 +362,15 @@ methodology applied to itself.
 Purpose built for [**Gather**](https://gather.co), a collective of independent thinkers,
 creators and practitioners who move at the velocity your business demands.  
 [github.com/cometogather](https://github.com/cometogather)
+
+---
+
+## Work with Gather
+
+<a href="https://cometogather.kit.com/retro-bot">
+  <img src="assets/lets-talk-card.png" alt="Interested in bringing human-centered AI design to your organization? Let's talk." />
+</a>
+
+*retro-bot is just one example of human-centered AI in action. Want to see how we can bring it to your organization at scale?* **[Let's talk.](https://cometogather.kit.com/retro-bot)**
 
 ---
